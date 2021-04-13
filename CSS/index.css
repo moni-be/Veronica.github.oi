@@ -17,35 +17,138 @@ body{
   height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }
 
-.container h1, h2, h3{
+.titles{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+.titles h1, h2, h3, h4{
   font-size: 2em;
   color: #ffffff;
   text-align: center;
   line-height: 1.5;
 }
 
-.container .title3{
+.titles .title4{
   font-weight: 200;
-  letter-spacing: 9px;
+  letter-spacing: 3px;
+  position: relative;
+  top: 30vh;
+  animation: title4 2s;
 }
 
-.container .title2{
+@keyframes title4{
+  0%{
+  transform: translateY(-350px)
+  }
+  100%{ 
+    transform: translateY(0)};
+}
+
+.titles .title3{
   font-weight: 400;
+  letter-spacing: 10px;
+  position: absolute;
+  left: 39.5%;
+  top: 37vh;
+  animation: title3 2s;
+}
+
+@keyframes title3{
+  0%{
+  transform: translateX(-200%)
+  }
+  100%{ 
+    transform: translateX(0)};
+}
+
+.titles .title2{
+  font-weight: 600;
   letter-spacing: 5px;
+  position: absolute;
+  right: 39.6%;
+  top: 45vh;
+  animation: title2 2s;
 }
 
-.container .title1{
+@keyframes title2{
+  0%{
+  transform: translateX(120%)
+  }
+  100%{ 
+    transform: translateX(0)};
+}
+
+.titles .title1{
   font-weight: 800;
-  letter-spacing: 2px;
+  letter-spacing: 3px;
+  position: absolute;
+  bottom: 40vh;
+  left: 39.5%;
+  animation: title1 2s;
 }
 
+@keyframes title1{
+  0%{
+  transform: translateY(280px);
+  }
+  100%{ 
+    transform: translateY(0)};
+}
 
+/*
+@media screen and (min-width: 320px), screen and (orientation: portrait) {
+  .titles h1, h2, h3, h4{
+    font-size: 1em;
+  }
 
+  .titles .title3{
+    left: 25%;
+    top: 37vh;
+    letter-spacing: 8px;
+  }
 
+  .titles .title2{
+    letter-spacing: 5px;
+    right: 23%;
+    top: 45vh;
+  }
+ 
+  .titles .title1{
+    letter-spacing: 3px;
+    bottom: 45vh;
+    left: 25%;
+  }
+
+}
+
+@media screen and (min-height: 641px), screen and (orientation: landscape) {
+  .titles h1, h2, h3, h4{
+    font-size: 1em;
+    line-height: 1.2;
+  }
+
+  .titles .title3{
+    left: 38%;
+    top: 37vh;
+    letter-spacing: 8px;
+  }
+
+  .titles .title2{
+    letter-spacing: 5px;
+    right: 37%;
+    top: 46vh;
+  }
+ 
+  .titles .title1{
+    letter-spacing: 4px;
+    bottom: 40vh;
+    left: 38.5%;
+  }
+}
+*/
 
 
 
