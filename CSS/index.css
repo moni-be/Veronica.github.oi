@@ -51,7 +51,7 @@ body{
   font-weight: 400;
   letter-spacing: 10px;
   position: absolute;
-  left: 39.5%;
+  left: 42%;
   top: 37vh;
   animation: title3 2s;
 }
@@ -68,7 +68,7 @@ body{
   font-weight: 600;
   letter-spacing: 5px;
   position: absolute;
-  right: 39.6%;
+  right: 41%;
   top: 45vh;
   animation: title2 2s;
 }
@@ -86,7 +86,7 @@ body{
   letter-spacing: 3px;
   position: absolute;
   bottom: 40vh;
-  left: 39.5%;
+  left: 42%;
   animation: title1 2s;
 }
 
@@ -98,58 +98,52 @@ body{
     transform: translateY(0)};
 }
 
-/*
-@media screen and (min-width: 320px), screen and (orientation: portrait) {
+@media screen and (min-width: 320px) and (max-width: 600px) {
   .titles h1, h2, h3, h4{
-    font-size: 1em;
+    font-size: 18px;
   }
 
   .titles .title3{
-    left: 25%;
+    left: 27%;
     top: 37vh;
     letter-spacing: 8px;
   }
 
   .titles .title2{
-    letter-spacing: 5px;
+    letter-spacing: 4.6px;
     right: 23%;
     top: 45vh;
   }
- 
   .titles .title1{
     letter-spacing: 3px;
-    bottom: 45vh;
-    left: 25%;
+    left: 26%;
+    top: 53vh;
   }
 
 }
 
-@media screen and (min-height: 641px), screen and (orientation: landscape) {
+@media screen and (min-width: 601px) and (max-width: 1200px){
   .titles h1, h2, h3, h4{
     font-size: 1em;
-    line-height: 1.2;
+    line-height: 40px;
   }
 
   .titles .title3{
     left: 38%;
-    top: 37vh;
+    top: 39vh;
     letter-spacing: 8px;
   }
 
   .titles .title2{
     letter-spacing: 5px;
-    right: 37%;
-    top: 46vh;
+    right: 36%;
+    top: 49vh;
   }
  
   .titles .title1{
     letter-spacing: 4px;
-    bottom: 40vh;
-    left: 38.5%;
+    bottom: 28vh;
+    left: 37%;
   }
 }
-*/
-
-
-
-
+ 
