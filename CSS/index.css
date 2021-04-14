@@ -109,7 +109,7 @@ body{
   font-weight: 800;
   letter-spacing: 3px;
   position: absolute;
-  bottom: 40vh;
+  top: 53vh;
   left: 42%;
   animation: title1 2s;
 }
@@ -128,6 +128,12 @@ body{
     text-align: center;
     margin-left: 0;
   }
+
+  .titles{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
   
   .titles h1, h2, h3, h4{
     font-size: 18px;
@@ -135,19 +141,17 @@ body{
 
   .titles .title3{
     left: 27%;
-    top: 37vh;
     letter-spacing: 8px;
   }
 
   .titles .title2{
     letter-spacing: 4.6px;
     right: 23%;
-    top: 45vh;
   }
   .titles .title1{
     letter-spacing: 3px;
     left: 26%;
-    top: 53vh;
+
   }
 
 }
@@ -176,8 +180,8 @@ body{
  
   .titles .title1{
     letter-spacing: 4px;
-    bottom: 28vh;
-    left: 37%;
+    top:58%;
+    left: 38%;
   }
 }
  
