@@ -31,7 +31,7 @@ body{
   display: block;
   margin: 24px 0 0 24px;
   text-decoration: none;
-  animation: prenom 2s ease-in 1;
+  animation: prenom 2s ease 1;
 }
 
 @keyframes prenom{
@@ -60,12 +60,17 @@ body{
   letter-spacing: 3px;
   position: relative;
   top: 30vh;
-  animation: title4 2s;
+  animation: title4 3.5s ease-out;
+  opacity: 0;
 }
 
 @keyframes title4{
   0%{
-  transform: translateY(-350px)
+  transform: translateY(-350px);
+  opacity:1;
+  }
+  85%{
+    opacity:1;
   }
   100%{ 
     transform: translateY(0)};
@@ -77,12 +82,17 @@ body{
   position: absolute;
   left: 39.6%;
   top: 37vh;
-  animation: title3 2s;
+  animation: title3 3.5s ease-out;
+  opacity: 0;
 }
 
 @keyframes title3{
   0%{
-  transform: translateX(-200%)
+  transform: translateX(-200%);
+  opacity:1;
+  }
+  85%{
+    opacity:1;
   }
   100%{ 
     transform: translateX(0)};
@@ -94,12 +104,17 @@ body{
   position: absolute;
   right: 39%;
   top: 45vh;
-  animation: title2 2s;
+  animation: title2 3.5s ease-out;
+  opacity: 0;
 }
 
 @keyframes title2{
   0%{
-  transform: translateX(120%)
+  transform: translateX(120%);
+  opacity:1;
+  }
+  85%{
+    opacity:1;
   }
   100%{ 
     transform: translateX(0)};
@@ -111,26 +126,23 @@ body{
   position: absolute;
   bottom: 0;
   left: 40%;
-  animation: title1 2.5s ease-in-out;
+  animation: title1 3.5s ease-out;
   opacity: 0;
 }
 
 @keyframes title1{
   0%{
   transform: translateY(0);
+  opacity:1;
 }
-
-50%{
-  transform: translateY(-38vh);
-  opacity: 1;
-}
-
-100%{ 
-    transform: translateX(80%);
-    transform: translateY(-38vh);
+  85%{
     opacity:1;
+    transform: translateY(-40vh);
   }
 
+100%{ 
+  transform: translateY(-40vh);
+  }
 }
 
 @media screen and (min-width: 320px) and (max-width: 600px) {
