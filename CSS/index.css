@@ -6,13 +6,13 @@ body{
   box-sizing: border-box;
   width: 100%;
   height: auto;
-  background-color: pink;
+  background-color: #522583;
   font-family: 'Raleway', sans-serif;
   font-size: 1em;
 }
 
 .container{
-  background-color: #522583;
+  background-image: linear-gradient(to left top, #1d2242, #242554, #2f2865, #3f2875, #522583);
   width: 100%;
   height: 100vh;
   display: flex;
@@ -75,7 +75,7 @@ body{
   font-weight: 400;
   letter-spacing: 10px;
   position: absolute;
-  left: 42%;
+  left: 39.6%;
   top: 37vh;
   animation: title3 2s;
 }
@@ -92,7 +92,7 @@ body{
   font-weight: 600;
   letter-spacing: 5px;
   position: absolute;
-  right: 41%;
+  right: 39%;
   top: 45vh;
   animation: title2 2s;
 }
@@ -107,19 +107,30 @@ body{
 
 .titles .title1{
   font-weight: 800;
-  letter-spacing: 3px;
+  letter-spacing: 2.5px;
   position: absolute;
-  top: 53vh;
-  left: 42%;
-  animation: title1 2s;
+  bottom: 0;
+  left: 40%;
+  animation: title1 2.5s ease-in-out;
+  opacity: 0;
 }
 
 @keyframes title1{
   0%{
-  transform: translateY(280px);
+  transform: translateY(0);
+}
+
+50%{
+  transform: translateY(-38vh);
+  opacity: 1;
+}
+
+100%{ 
+    transform: translateX(80%);
+    transform: translateY(-38vh);
+    opacity:1;
   }
-  100%{ 
-    transform: translateY(0)};
+
 }
 
 @media screen and (min-width: 320px) and (max-width: 600px) {
