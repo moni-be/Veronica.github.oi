@@ -9,6 +9,39 @@ body{
   background-color: #522583;
   font-family: 'Raleway', sans-serif;
   font-size: 1em;
+  display: flex;
+}
+
+.navi-logos{
+  position:absolute;
+  top:50%;
+  right: 20%;
+}
+
+.navi-logos .icon {
+  fill: #ffffff;
+  animation: iconanim 4s ease-in 1;
+  opacity: 1;
+}
+
+.navi-logos a{
+  margin-bottom: 30px;
+  display: block;
+  height: 30px;
+  width: 30px;
+}
+
+@keyframes iconanim {
+  0%{
+    opacity: 0;
+  }
+  75%{
+    opacity: .15;
+  }
+ 
+  100%{
+    opacity: 1;
+  }
 }
 
 .container{
@@ -125,7 +158,7 @@ body{
   letter-spacing: 2.5px;
   position: absolute;
   bottom: 0;
-  left: 40%;
+  left: 39%;
   animation: title1 3.5s ease-out;
   opacity: 0;
 }
@@ -137,11 +170,11 @@ body{
 }
   85%{
     opacity:1;
-    transform: translateY(-40vh);
+    transform: translateY(-38vh);
   }
 
 100%{ 
-  transform: translateY(-40vh);
+  transform: translateY(-38vh);
   }
 }
 
@@ -173,8 +206,8 @@ body{
   }
   .titles .title1{
     letter-spacing: 3px;
-    left: 26%;
-
+    left: 28%;
+    bottom: 4vh;
   }
 
 }
@@ -203,8 +236,9 @@ body{
  
   .titles .title1{
     letter-spacing: 4px;
-    top:58%;
-    left: 38%;
+    bottom:0;
+    left: 40%;
+    bottom:-6vh
   }
 }
  
