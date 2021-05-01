@@ -6,13 +6,49 @@ body{
   box-sizing: border-box;
   width: 100%;
   height: auto;
-  background-color: pink;
+  background-color: #522583;
   font-family: 'Raleway', sans-serif;
   font-size: 1em;
+  display: flex;
+}
+
+.navi-logos{
+  position:absolute;
+  top:50%;
+  right: 20%;
+}
+
+.navi-logos .icon {
+  fill: #ffffff;
+  animation: iconanim 3s .5s forwards linear;
+  opacity: 1;
+}
+
+.navi-logos a{
+  margin-bottom: 30px;
+  display: block;
+  height: 30px;
+  width: 30px;
+}
+
+@keyframes iconanim {
+  0%{
+    opacity: 0;
+  }
+  50%{
+    opacity: 0;
+  }
+  80%{
+    opacity: .15;
+  }
+ 
+  100%{
+    opacity: 1;
+  }
 }
 
 .container{
-  background-color: #522583;
+  background-image: linear-gradient(to left top, #1d2242, #242554, #2f2865, #3f2875, #522583);
   width: 100%;
   height: 100vh;
   display: flex;
@@ -31,7 +67,7 @@ body{
   display: block;
   margin: 24px 0 0 24px;
   text-decoration: none;
-  animation: prenom 2s ease-in 1;
+  animation: prenom 2s ease 1;
 }
 
 @keyframes prenom{
@@ -43,29 +79,47 @@ body{
   }
 }
 
-.titles{
-  width: 100%;
-  height: 100%;
+.container .cont-tit{
   position: absolute;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  min-width: 200px;
+  min-height: 200px;
+  top: 0;
+  left: 0;
 }
-.titles h1, h2, h3, h4{
+
+.title1,.title2,.title3,.title4{
   font-size: 2em;
   color: #ffffff;
   text-align: center;
   line-height: 1.5;
+  position: absolute;
 }
 
 .titles .title4{
   font-weight: 200;
   letter-spacing: 3px;
-  position: relative;
-  top: 30vh;
-  animation: title4 2s;
+  left: 50%;
+  top: 50%;
+  margin-left: -150px;
+  margin-top: -160px;
+  animation: title4 3.5s ease-out;
+  opacity: 0;
 }
 
 @keyframes title4{
   0%{
-  transform: translateY(-350px)
+  transform: translateY(-350px);
+  opacity:0;
+  }
+  30%{
+    opacity:1;
+  }
+  70%{
+    opacity:1;
+    transform: translateY(0)
   }
   100%{ 
     transform: translateY(0)};
@@ -74,15 +128,25 @@ body{
 .titles .title3{
   font-weight: 400;
   letter-spacing: 10px;
-  position: absolute;
-  left: 42%;
-  top: 37vh;
-  animation: title3 2s;
+  left: 50%;
+  top: 55%;
+  margin-left: -150px;
+  margin-top: -150px;
+  animation: title3 3.5s ease-out;
+  opacity: 0;
 }
 
 @keyframes title3{
   0%{
-  transform: translateX(-200%)
+  transform: translateX(-200%);
+  opacity:1;
+  }
+  30%{
+    opacity:1;
+  }
+  70%{
+    opacity:1;
+    transform: translateX(0);
   }
   100%{ 
     transform: translateX(0)};
@@ -91,15 +155,25 @@ body{
 .titles .title2{
   font-weight: 600;
   letter-spacing: 5px;
-  position: absolute;
-  right: 41%;
-  top: 45vh;
-  animation: title2 2s;
+  left: 50%;
+  top: 60%;
+  margin-left: -150px;
+  margin-top: -130px;
+  animation: title2 3.5s ease-out;
+  opacity: 0;
 }
 
 @keyframes title2{
   0%{
-  transform: translateX(120%)
+  transform: translateX(120%);
+  opacity:0;
+  }
+  30%{
+    opacity:1;
+  }
+  70%{
+    transform: translateX(0);
+    opacity:1;
   }
   100%{ 
     transform: translateX(0)};
@@ -107,19 +181,30 @@ body{
 
 .titles .title1{
   font-weight: 800;
-  letter-spacing: 3px;
-  position: absolute;
-  top: 53vh;
-  left: 42%;
-  animation: title1 2s;
+  letter-spacing: 2.5px;
+  bottom: 60%;
+  left: 50%;
+  margin-bottom: -100px;
+  margin-left: -150px;
+  animation: title1 3.5s ease-out;
+  opacity: 0;
 }
 
 @keyframes title1{
   0%{
-  transform: translateY(280px);
+  transform: translateY(150px);
+  opacity:0;
+}
+  30%{
+    opacity:1;
+  }
+  70%{
+    transform: translateY(0);
+    opacity:1;
   }
   100%{ 
-    transform: translateY(0)};
+    transform: translateY(0);
+  }
 }
 
 @media screen and (min-width: 320px) and (max-width: 600px) {
@@ -129,59 +214,65 @@ body{
     margin-left: 0;
   }
 
-  .titles{
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-  }
-  
-  .titles h1, h2, h3, h4{
-    font-size: 18px;
+  .title1,.title2,.title3,.title4{
+    font-size: 16px;
   }
 
+  .titles .title4{
+    letter-spacing: 3px;
+    left: 50%;
+    top: 50%;
+    margin-left: -100px;
+    margin-top: -200px;
+  }
   .titles .title3{
-    left: 27%;
-    letter-spacing: 8px;
+    left: 50%;
+    top: 55%;
+    margin-left: -100px;
+    margin-top: -190px;
+    letter-spacing: 7px;
   }
 
   .titles .title2{
     letter-spacing: 4.6px;
-    right: 23%;
+    left: 50%;
+    top: 50%;
+    margin-left: -100px;
+    margin-top: -100px;
   }
   .titles .title1{
     letter-spacing: 3px;
-    left: 26%;
-
+    bottom: 60%;
+    left: 50%;
+    margin-bottom: -50px;
+    margin-left: -100px;
   }
 
 }
 
-@media screen and (min-width: 601px) and (max-width: 1200px){
+@media screen and (min-width: 601px) and (max-width: 1280px) {
   .container .entete .nompre{
     font-size: 24px;
   }
   
-  .titles h1, h2, h3, h4{
-    font-size: 1em;
-    line-height: 40px;
+  .title1,.title2,.title3,.title4{
+    font-size: 24px;
   }
-
+  .titles .title4{
+    margin-top: -70px;
+  }
   .titles .title3{
-    left: 38%;
-    top: 39vh;
     letter-spacing: 8px;
+    margin-top: -50px;
   }
-
   .titles .title2{
-    letter-spacing: 5px;
-    right: 36%;
-    top: 49vh;
+    letter-spacing: 4.5px;
+    margin-top: -40px;
   }
- 
   .titles .title1{
-    letter-spacing: 4px;
-    top:58%;
-    left: 38%;
+    letter-spacing: 3.2px;
+    bottom: 40%;
+    margin-bottom: -55px;
   }
 }
  
