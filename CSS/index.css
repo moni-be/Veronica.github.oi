@@ -20,7 +20,7 @@ body{
 
 .navi-logos .icon {
   fill: #ffffff;
-  animation: iconanim 4s ease-in 1;
+  animation: iconanim 3s .5s forwards linear;
   opacity: 1;
 }
 
@@ -35,7 +35,10 @@ body{
   0%{
     opacity: 0;
   }
-  75%{
+  50%{
+    opacity: 0;
+  }
+  80%{
     opacity: .15;
   }
  
@@ -98,8 +101,6 @@ body{
 .titles .title4{
   font-weight: 200;
   letter-spacing: 3px;
-/*   position: relative;
-  top: 30vh; */
   left: 50%;
   top: 50%;
   margin-left: -150px;
@@ -111,10 +112,14 @@ body{
 @keyframes title4{
   0%{
   transform: translateY(-350px);
-  opacity:1;
+  opacity:0;
   }
-  85%{
+  30%{
     opacity:1;
+  }
+  70%{
+    opacity:1;
+    transform: translateY(0)
   }
   100%{ 
     transform: translateY(0)};
@@ -123,9 +128,6 @@ body{
 .titles .title3{
   font-weight: 400;
   letter-spacing: 10px;
-/*   position: absolute;
-  left: 39.6%;
-  top: 37vh; */
   left: 50%;
   top: 55%;
   margin-left: -150px;
@@ -139,8 +141,12 @@ body{
   transform: translateX(-200%);
   opacity:1;
   }
-  85%{
+  30%{
     opacity:1;
+  }
+  70%{
+    opacity:1;
+    transform: translateX(0);
   }
   100%{ 
     transform: translateX(0)};
@@ -149,9 +155,6 @@ body{
 .titles .title2{
   font-weight: 600;
   letter-spacing: 5px;
-/*   position: absolute;
-  right: 39%;
-  top: 45vh; */
   left: 50%;
   top: 60%;
   margin-left: -150px;
@@ -163,9 +166,13 @@ body{
 @keyframes title2{
   0%{
   transform: translateX(120%);
-  opacity:1;
+  opacity:0;
   }
-  85%{
+  30%{
+    opacity:1;
+  }
+  70%{
+    transform: translateX(0);
     opacity:1;
   }
   100%{ 
@@ -175,25 +182,28 @@ body{
 .titles .title1{
   font-weight: 800;
   letter-spacing: 2.5px;
-  bottom: 65%;
+  bottom: 60%;
   left: 50%;
-  margin-bottom: -150px;
+  margin-bottom: -100px;
   margin-left: -150px;
   animation: title1 3.5s ease-out;
   opacity: 0;
 }
+
 @keyframes title1{
   0%{
-  transform: translateY(500px);
-  opacity:1;
+  transform: translateY(150px);
+  opacity:0;
 }
-  85%{
+  30%{
     opacity:1;
-    transform: translateY(0);
   }
-
-100%{ 
-  transform: translateY(0);
+  70%{
+    transform: translateY(0);
+    opacity:1;
+  }
+  100%{ 
+    transform: translateY(0);
   }
 }
 
@@ -220,7 +230,7 @@ body{
     top: 55%;
     margin-left: -100px;
     margin-top: -190px;
-    letter-spacing: 8px;
+    letter-spacing: 7px;
   }
 
   .titles .title2{
@@ -240,7 +250,7 @@ body{
 
 }
 
-@media screen and (min-width: 601px) and (max-width: 1200px){
+@media screen and (min-width: 601px) and (max-width: 1280px) {
   .container .entete .nompre{
     font-size: 24px;
   }
@@ -252,18 +262,17 @@ body{
     margin-top: -70px;
   }
   .titles .title3{
+    letter-spacing: 8px;
     margin-top: -50px;
   }
-
   .titles .title2{
-    letter-spacing: 5px;
-    margin-top: -30px;
+    letter-spacing: 4.5px;
+    margin-top: -40px;
   }
- 
   .titles .title1{
-    letter-spacing: 4px;
-    bottom: 50%;
-    margin-bottom: -100px;
+    letter-spacing: 3.2px;
+    bottom: 40%;
+    margin-bottom: -55px;
   }
 }
  
