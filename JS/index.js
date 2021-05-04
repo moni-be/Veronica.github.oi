@@ -11,11 +11,18 @@ $('.slide-nav').on('click', function (e) {
   if (current === next) {
     return false
   } else {
-    $('.slider__warpper').find('.flex__container[data-slide=' + next + ']').addClass('flex--preStart')
+    $('.slider__wrap').find('.flex__container[data-slide=' + next + ']').addClass('flex--preStart')
     $('.flex--active').addClass('animate--end')
     setTimeout(function () {
       $('.flex--preStart').removeClass('animate--start flex--preStart').addClass('flex--active')
       $('.animate--end').addClass('animate--start').removeClass('animate--end flex--active')
     }, 800)
+  }
+
+  var changecol = $('.baseline')
+  if (next == 3) {
+    return changecol.css('color', '#1D2242')
+  }else{
+    return changecol.css('color', '#ffffff')
   }
 })
