@@ -13,6 +13,7 @@ body{
   font-family: 'Raleway', sans-serif;
   font-size: 1em;
   display: flex;
+  color: #ffffff;
 }
 /*HEADER***********************/
 .navi-logos{
@@ -33,6 +34,17 @@ body{
   display: block;
   height: 30px;
   width: 30px;
+}
+
+#i-html:hover{
+  fill: #E34D26;
+}
+
+#i-css:hover{
+  fill: #264DE4;
+}
+#i-js:hover{
+  fill: #F0DB4F;
 }
 
 @keyframes iconanim {
@@ -279,19 +291,19 @@ body{
 
 .container .entete .nompre{
   font-size: 2.5em;
-  font-weight: 600;
+  font-weight: 400;
   animation: prenom 2s ease 1;
-  text-shadow: 1.5px 1.5px 2.5px rgba(29,34,66, 0.8)
+  text-shadow: 1.5px 1.5px 2.5px rgba(29,34,66, 0.85)
 }
 
 .container .entete .baseline{
   font-weight: 400;
-  font-size: .785em;
-  animation: prenom 2s ease 1;
+  font-size: .7em;
   margin-left: 5px;
   word-wrap: normal;
   display: block;
   width: 300px;
+  animation: prenom 2s ease 1;
 }
 
 @keyframes prenom{
