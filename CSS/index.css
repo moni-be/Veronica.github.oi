@@ -452,17 +452,22 @@ body{
   }
 
   .text--big {
-    font-size: 5.5em;
+    font-size: 4.2em;
+    letter-spacing: -8px;
   }
 
   .text--normal {
     font-size: 13px;
     letter-spacing: 1px;
+    margin-bottom: 25px;
     text-align: left;
+    margin-top: 15px;
+    margin-bottom: 25px;
   }
 
   .text--sub {
     font-size: .7em;
+    letter-spacing: 0.4rem;
   }
 
   .container .entete{
@@ -537,14 +542,22 @@ body{
     width: 30%;
   }
 
+  .text--big {
+    font-size: 5.5em;
+  }
+
   .text--normal {
     font-size: 14px;
     letter-spacing: 1px;
     text-align: justify;
+    margin-top: 5px;
+    margin-bottom: 60px;
+
   }
 
   .text--sub {
     font-size: .7em;
+    margin-top: 50px;
   }
 
   .container .entete .nompre{
