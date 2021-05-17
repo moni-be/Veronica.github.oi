@@ -1,2 +1,2 @@
 # A glimpse of my job
-My personal page...comming
+I love HTML5, CSS3, JS...
