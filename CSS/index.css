@@ -208,10 +208,20 @@ body{
 	transition: transform 0.2s linear 0.2s, opacity 0.1s linear 0.2s;
 }
 
+.conti{
+  width: 50%;
+  margin: auto;
+  position: relative;
+  left: 8%;
+}
+
+.conti .icon__img{
+  right: 12%;
+  position: absolute;
+  bottom: 20px;
+}
+
 .icon__img {
-	position: absolute;
-	bottom: 20px;
-	right: 27%;
 	max-height: 35vw;
 	opacity: 1;
 	transform: translate3d(0,0,0);
@@ -302,7 +312,7 @@ body{
   margin-left: 5px;
   word-wrap: normal;
   display: block;
-  width: 300px;
+  width: 350px;
   animation: prenom 2s ease 1;
 }
 
@@ -418,7 +428,7 @@ body{
 .titles .title1{
   font-weight: 800;
   letter-spacing: 2.5px;
-  bottom: 60%;
+  bottom: 57%;
   left: 50%;
   margin-bottom: -100px;
   margin-left: -150px;
@@ -485,7 +495,7 @@ body{
   .container .entete .baseline{
     font-size: .6em;
     letter-spacing: 2px;
-    width: 200px;
+    width: 230px;
     word-wrap: break-word;
     margin-left: 3px;
   }
@@ -567,16 +577,25 @@ body{
   .container .entete .baseline{
     font-size: .6em;
     letter-spacing: 2px;
-    width: 200px;
+    width: 230px;
     word-wrap: normal;
     margin-left: 3px;
   }
 
-  .icon__img {
-    right: 22%;
-    max-height: 22vw;
-    bottom: 100px;
+
+  .conti{
+    left: 135px;
   }
+
+  .conti .icon__img{
+    right: 5px;
+    bottom: 210px;
+  }
+   .icon__img {
+     max-height: 18vw;
+/*     right: 20%;
+    bottom: 150px; */
+  } 
 
   .navi-logos{
     right: 12%;
