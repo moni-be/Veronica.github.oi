@@ -567,7 +567,8 @@ body{
 
   .text--sub {
     font-size: .7em;
-    margin-top: 50px;
+    margin-top: 20px;
+    margin-bottom:25px;
   }
 
   .container .entete .nompre{
@@ -581,15 +582,7 @@ body{
     word-wrap: normal;
     margin-left: 3px;
   }
-/* 
-  .conti{
-    left: 135px;
-  }
 
-  .conti .icon__img{
-    right: 5px;
-    bottom: 210px;
-  } */
    .icon__img {
     max-height: 20vw;
     right: 170px;
