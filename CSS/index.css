@@ -146,7 +146,7 @@ body{
 }
 
 .flex__item--right {
-	width: 40%;
+	width: 35%;
 	transform-origin: right center;
 	transition: transform 0.1s linear 0s;
 	opacity: 0;
@@ -208,7 +208,7 @@ body{
 	transition: transform 0.2s linear 0.2s, opacity 0.1s linear 0.2s;
 }
 
-.conti{
+/* .conti{
   width: 50%;
   margin: auto;
   position: relative;
@@ -216,12 +216,12 @@ body{
 }
 
 .conti .icon__img{
-  right: 12%;
+}
+ */
+.icon__img {
+  right: 28%;
   position: absolute;
   bottom: 20px;
-}
-
-.icon__img {
 	max-height: 35vw;
 	opacity: 1;
 	transform: translate3d(0,0,0);
@@ -581,8 +581,7 @@ body{
     word-wrap: normal;
     margin-left: 3px;
   }
-
-
+/* 
   .conti{
     left: 135px;
   }
@@ -590,11 +589,11 @@ body{
   .conti .icon__img{
     right: 5px;
     bottom: 210px;
-  }
+  } */
    .icon__img {
-     max-height: 18vw;
-/*     right: 20%;
-    bottom: 150px; */
+    max-height: 20vw;
+    right: 170px;
+    bottom: 130px;
   } 
 
   .navi-logos{
