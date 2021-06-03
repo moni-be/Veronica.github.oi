@@ -561,14 +561,15 @@ body{
     letter-spacing: 1px;
     text-align: justify;
     margin-top: 5px;
-    margin-bottom: 60px;
+    margin-bottom: 50px;
 
   }
 
   .text--sub {
-    font-size: .7em;
-    margin-top: 20px;
-    margin-bottom:25px;
+    font-size: 14px;
+    margin-top: 40px;
+    margin-bottom:0px;
+    letter-spacing: 5px;
   }
 
   .container .entete .nompre{
@@ -585,7 +586,7 @@ body{
 
    .icon__img {
     max-height: 20vw;
-    right: 170px;
+    right: 150px;
     bottom: 130px;
   } 
 
